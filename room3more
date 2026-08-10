@@ -1,0 +1,37 @@
+data class PrivateRoom(
+    val id: String,
+    val type: RoomType,
+    val name: String,
+    val description: String,
+    val avatarId: String,
+    val lighting: String,
+    val music: String,
+    val ambience: String,
+    val furniture: List<String>,
+    val interactiveObjects: List<String>,
+    val atmosphere: List<String>,
+    val privacyLevel: PrivacyLevel = PrivacyLevel.INVITE_ONLY,
+    val adultsOnly: Boolean = true,
+
+    // Intentionally blank for later
+    val actionPrompt: String = ""
+)
+
+enum class PrivacyLevel {
+    INVITE_ONLY,
+    ROOM_CODE,
+    PRIVATE
+}
+
+enum class RoomType {
+    BEDROOM,
+    LOUNGE,
+    FUTURISTIC_POD,
+    NIGHTCLUB,
+    FANTASY_CHAMBER,
+    LUXURY_SUITE,
+    PRIVATE_SPA,
+    ROOFTOP_SUITE,
+    BEACH_VILLA,
+    SPACE_STATION
+}
