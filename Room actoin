@@ -1,0 +1,9 @@
+fun executeAction(room: PrivateRoom) {
+    val prompt = room.actionPrompt
+
+    if (prompt.isBlank()) {
+        return
+    }
+
+    // Send prompt to your AI/game engine here.
+}
