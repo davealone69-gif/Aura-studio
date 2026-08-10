@@ -1,0 +1,27 @@
+enum class RoomType {
+    BEDROOM,
+    LOUNGE,
+    FUTURISTIC_POD,
+    NIGHTCLUB,
+    FANTASY_CHAMBER
+}
+
+data class PrivateRoom(
+    val id: String,
+    val type: RoomType,
+    val avatarId: String,
+    val isPrivate: Boolean = true,
+    val adultsOnly: Boolean = true,
+    val actionPrompt: String = ""
+)
+
+fun createRoom(
+    type: RoomType,
+    avatarId: String
+): PrivateRoom {
+    return PrivateRoom(
+        id = java.util.UUID.randomUUID().toString(),
+        type = type,
+        avatarId = avatarId
+    )
+}
