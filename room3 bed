@@ -1,0 +1,24 @@
+val bedroom = createRoom(
+    RoomType.BEDROOM,
+    avatarId = "prepared_avatar_01"
+)
+
+val lounge = createRoom(
+    RoomType.LOUNGE,
+    avatarId = "prepared_avatar_01"
+)
+
+val futuristicPod = createRoom(
+    RoomType.FUTURISTIC_POD,
+    avatarId = "prepared_avatar_01"
+)
+
+val nightclub = createRoom(
+    RoomType.NIGHTCLUB,
+    avatarId = "prepared_avatar_01"
+)
+
+val fantasyChamber = createRoom(
+    RoomType.FANTASY_CHAMBER,
+    avatarId = "prepared_avatar_01"
+)
